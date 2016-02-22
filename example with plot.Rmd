@@ -1,0 +1,23 @@
+---
+title: "Example with plot"
+author: "Philipp Staender"
+date: "21 Feb 2016"
+output: pdf_document
+---
+
+#section heading
+
+Here is some text. Followed by an R code chunk:
+
+```{r}
+library(ggplot2)
+ggplot(mtcars, aes(hp, mpg)) + geom_point()
+```
+
+
+Then some more text
+```{r echo=FALSE, results='asis'}
+knitr::kable(mtcars)
+
+```
+
