@@ -14,6 +14,11 @@ library(ggplot2)
 ggplot(mtcars, aes(hp, mpg)) + geom_point()
 ```
 
+```{r, echo=FALSE}
+library(ggplot2)
+
+ggplot(mtcars, aes(hp, mpg)) + geom_point()
+```
 
 Then some more text
 ```{r echo=FALSE, results='asis'}
